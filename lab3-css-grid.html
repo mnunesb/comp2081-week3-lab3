@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lab 3 | CSS Grid</title>
+		<meta name="description" content="A CSS Grid challenge to test your new layout skills">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			/* Put styles for CSS Grid here for the Lab */
+			.item-a{
+				grid-area: branding;
+				background-color: red;
+			}
+			.item-b{
+				grid-area: gnavigation;
+				background-color: lightcoral;
+			}
+			.item-c{
+				grid-area: lnavigation;
+				background-color: pink;
+			}
+			.item-d{
+				grid-area: footer;
+				background-color: yellowgreen;
+			}
+			.item-e{
+				grid-area: story;
+				background-color: brown;
+			}
+			.item-f{
+				grid-area: gnews;
+				background-color: coral;
+			}
+			.item-g{
+				grid-area: nnews;
+				background-color: orange;
+			}
+			.item-h{
+				grid-area: lnews;
+				background-color: blanchedalmond;
+			}
+			.item-i{
+				grid-area: search;
+				background-color: lightblue;
+			}
+			.item-j{
+				grid-area: stock;
+				background-color: aquamarine;
+			}
+			.item-k{
+				grid-area: advertising1;
+				background-color: yellow;
+			}
+			.item-l{
+				grid-area: advertising2;
+				background-color: green;
+			}
+			.container{
+				display: inline-grid;
+				grid-template-columns: 180px 130px 130px 130px 180px;
+				grid-template-rows: 100px 100px 150px 150px 150px 100px;
+				column-gap: 5px;
+				row-gap: 5px;
+				grid-template-areas:
+					"branding advertising1 advertising1 advertising1 search"
+					"branding gnavigation gnavigation gnavigation gnavigation"
+					"lnavigation story story story advertising2"
+					"lnavigation gnews nnews lnews advertising2"
+					"lnavigation gnews nnews lnews stock"
+					"footer footer footer footer footer";
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item item-a">
+				<h2>Branding</h2>
+			</div>
+			<div class="item item-b">
+				<h2>Global Nav</h2>
+			</div>
+			<div class="item item-c">
+				<h2>Local Nav</h2>
+			</div>
+			<div class="item item-d">
+				<h2>Footer</h2>
+			</div>
+			<div class="item item-e">
+				<h2>Top Story</h2>
+			</div>
+			<div class="item item-f">
+				<h2>Global News</h2>
+			</div>
+			<div class="item item-g">
+				<h2>National News</h2>
+			</div>
+			<div class="item item-h">
+				<h2>Local News</h2>
+			</div>
+			<div class="item item-i">
+				<h2>Search</h2>
+			</div>
+			<div class="item item-j">
+				<h2>Market Info</h2>
+			</div>
+			<div class="item item-k">
+				<h2>Advertising 1</h2>
+			</div>
+			<div class="item item-l">
+				<h2>Advertising 2</h2>
+			</div>
+		</div><!-- .container -->
+	</body>
+</html>
